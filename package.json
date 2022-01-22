@@ -10,7 +10,10 @@
     "make": "electron-forge make"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "bio426",
+    "email": "bildloar@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.63",
