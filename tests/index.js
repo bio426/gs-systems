@@ -1,20 +1,15 @@
-const { initialize, createCar } = require("../app/functions/index")
+const JSONdb = require("simple-json-db")
+const path = require("path")
 
-const db = initialize()
+const jsonPath = path.join(__dirname, "..", "storage", "database", "data.json")
 
-createCar(db, {
-	plate: "TEST-322",
-	color: "blanco",
-	model: "nissan",
-	// brand: "cargo",
-	ownerName: "jhon",
-	ownerAddress: "av mexico",
-	ownerDni: "12332112",
-	ownerRuc: "001012332112",
+const db = new JSONdb(jsonPath, { jsonSpaces: 2 })
+
+db.set("plate-num", {
+	foo: 3,
+	bar: "text",
+	baz: [true, false],
+	qux: {
+		name: "jhon",
+	},
 })
-	.then((res) => {
-		console.log(res)
-	})
-	.catch((err) => {
-    console.error(err)
-  })

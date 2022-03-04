@@ -132,6 +132,7 @@ function FileManager(props) {
 				})
 			})
 			this.files = list
+			this.filterInput = ""
 		},
 		async deleteFile(fileName) {
 			await window.api.deleteFile(fileName)
