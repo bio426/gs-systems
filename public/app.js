@@ -108,7 +108,7 @@ function DocumentGenerator(props) {
 				this.clientRuc = carData.ownerRuc
 			} catch (error) {
 				console.log(error)
-				alert("No se encontro la placa en los registros")
+				// alert("No se encontro la placa en los registros")
 			}
 		},
 		onMounted() {},

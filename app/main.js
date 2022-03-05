@@ -23,7 +23,7 @@ function createWindow() {
 
 	mainWindow.loadFile(path.join(__dirname, "..", "public", "index.html"))
 	mainWindow.maximize()
-	mainWindow.webContents.openDevTools()
+	// mainWindow.webContents.openDevTools()
 }
 
 ipcMain.handle("create-order", async (event, payload) => {
@@ -63,6 +63,5 @@ ipcMain.handle("find-car", async (event, payload) => {
 
 app.on("ready", createWindow)
 app.on("window-all-closed", () => {
-	db.close()
 	app.quit()
 })
