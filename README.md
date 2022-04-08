@@ -21,7 +21,7 @@ The main goal with this project was made a javascript based desktop application 
 Some of the technologies that were used to build this project.
 
 - [Electron.js](https://www.electronjs.org/)
-- [Bootsrap 5](https://getbootstrap.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
 - [PdfKit](https://pdfkit.org/)
 
 <div style="display:flex;justify-content:center;gap:16px">
